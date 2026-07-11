@@ -4,7 +4,19 @@ This is a program to create an OpenLCB/LCC node. It was developed using Platform
 
 ## General functionality
 
+1. Provides TOTI functionality for six TOTIs.
+2. Allows the onboard LED to be configured to indicate various events.
+
 ## Detailed functionality
+
+1. Send produced events when each TOTI becomes occupied or not occupied.
+2. Allows user configurable delays for occupied and not occupied.
+3. Send initial states when connecting to the LCC hub to initialise JMRI.
+4. Respond to queries from JMRI.
+5. Provides 6 TOTIs.
+6. Allows each colour of the on board RGB LED to be user configured to indicate one of;-
+    - the state of the connection to the JMRI hub
+    - the state of each of the six TOTIs
 
 ## Software components
 This software uses the following components;-
