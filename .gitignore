@@ -8,3 +8,4 @@ credential*.*
 *.xls*
 Configurations.json
 *.txt
+.gitignore
