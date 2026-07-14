@@ -4,7 +4,7 @@ This is a program to create an OpenLCB/LCC node. It was developed using Platform
 
 ## General functionality
 
-1. Provides TOTI functionality for six TOTIs.
+1. Provides TOTI (Train On Track Indication) functionality for six TOTIs.
 2. Allows the onboard LED to be configured to indicate various events.
 3. Allows for remote configuration and remote software updates.
 
