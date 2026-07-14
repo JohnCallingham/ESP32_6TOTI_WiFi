@@ -25,3 +25,10 @@ This software uses the following components;-
 - ESP32WiFiGC. See https://github.com/JohnCallingham/ESP32WiFiGC
 - LCC_TOTI. See https://github.com/JohnCallingham/LCC_TOTI
 - LCC_CONFIGURATION. See https://github.com/JohnCallingham/LCC_CONFIGURATION
+
+The following software components are dependencies of one or more of the above components;-
+ - ArduinoJson. See [bblanchon/ArduinoJson@^7.4.1](https://github.com/bblanchon/ArduinoJson)
+ - DEBOUNCE. See https://github.com/JohnCallingham/DEBOUNCE
+ - LCC_NODE_COMPONENT_BASE. See https://github.com/JohnCallingham/LCC_NODE_COMPONENT_BASE
+
+ The PlatformIO Library Dependency Finder handles downloading all dependencies.
