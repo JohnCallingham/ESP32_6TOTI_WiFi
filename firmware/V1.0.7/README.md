@@ -1,4 +1,4 @@
-## V1.0.7
+# V1.0.7
 
 Changed ```#define NODE_ADDRESS``` to ```5,1,1,1,0x91,0x00```
 
