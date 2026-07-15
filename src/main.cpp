@@ -33,14 +33,15 @@
 #define MANU "J Callingham"  // The manufacturer of node
 #define MODEL "ESP32_6TOTI_Wifi" // The model of the board
 #define HWVERSION "0.1"   // Hardware version
-#define SWVERSION "1.0.0"   // Software version
+#define SWVERSION "1.0.7"   // Software version
 
 // To Reset the Node Number, Uncomment and edit the next line
 // Need to do this at least once.  
 // #define NODE_ADDRESS  5,1,1,1,0x91,0x07  // First servo node.
 // #define NODE_ADDRESS  5,1,1,1,0x91,0x08  // Second servo node.
 // #define NODE_ADDRESS  5,1,1,1,0x91,0x09  // Third servo node.
-#define NODE_ADDRESS  5,1,1,1,0x91,0x0A  // Six TOTI node.
+// #define NODE_ADDRESS  5,1,1,1,0x91,0x0A  // Six TOTI node.
+#define NODE_ADDRESS  5,1,1,1,0x91,0x00  // Default node ID which will be changed by the remote configuration software.
 
 // Set to 1 to Force Reset EEPROM to Factory Defaults 
 // Need to do this at least once.  
