@@ -23,7 +23,7 @@
 #include "credentials.h"
 #include "ESP32WiFiGC_V2.h"
 #include "TOTI.h"
-#include "configurationOTA.h"
+// #include "configurationOTA.h" // ??? required ??? esp32wifigc_v2.h includes this
 #include "configurationPreferences.h"
 
 #define DEBUG Serial
