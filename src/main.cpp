@@ -288,8 +288,6 @@ void userConfigWritten(uint32_t address, uint16_t length, uint16_t func) {
 
 void sendInitialEvents() {
   for (uint8_t i=0; i<NUM_TOTI; i++) {
-    // eventToSend = toti[i]->getEventForCurrentState();
-    // if (eventToSend != -1) OpenLcb.produce(eventToSend);
     toti[i]->sendEventsForCurrentState();
   }
 }
