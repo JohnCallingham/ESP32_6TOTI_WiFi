@@ -1,5 +1,5 @@
 .pio
 .vscode
-.gitignore
+.gitignore*.*
 credential*.*
 configurations*.*
