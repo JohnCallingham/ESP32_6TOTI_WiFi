@@ -2,9 +2,9 @@
 
 This is a program to create an OpenLCB/LCC node. It was developed using PlatformIO to run on an Arduino Nano ESP32. The node is designed to connect over WiFi to the LCC hub provided by JMRI.
 
-It is part of a group of nodes which use the same codebase. The other nodes are;-
-- ESP32_2Servo_2Frog_2TOTI_WiFi
-- ESP32_4ToF_WiFi
+It is part of a group of node types which use the same codebase. The other nodes are;-
+- [ESP32_2Servo_2Frog_2TOTI_WiFi](https://github.com/JohnCallingham/ESP32_2Servo_2Frog_2TOTI_WiFi)
+- [ESP32_4ToF_WiFi](https://github.com/JohnCallingham/ESP32_4ToF_WiFi)
 
 ## General functionality
 
@@ -25,14 +25,14 @@ It is part of a group of nodes which use the same codebase. The other nodes are;
 
 ## Software components
 This software uses the following components;-
-- OpenLCB_Single_Thread. See https://github.com/openlcb/OpenLCB_Single_Thread
-- ESP32WiFiGC. See https://github.com/JohnCallingham/ESP32WiFiGC
-- LCC_TOTI. See https://github.com/JohnCallingham/LCC_TOTI
-- LCC_CONFIGURATION. See https://github.com/JohnCallingham/LCC_CONFIGURATION
+- [OpenLCB_Single_Thread](https://github.com/openlcb/OpenLCB_Single_Thread)
+- [ESP32WiFiGC](https://github.com/JohnCallingham/ESP32WiFiGC)
+- [LCC_TOTI](https://github.com/JohnCallingham/LCC_TOTI)
+- [LCC_CONFIGURATION](https://github.com/JohnCallingham/LCC_CONFIGURATION)
 
 The following software components are dependencies of one or more of the above components;-
- - ArduinoJson. See [bblanchon/ArduinoJson@^7.4.1](https://github.com/bblanchon/ArduinoJson)
- - DEBOUNCE. See https://github.com/JohnCallingham/DEBOUNCE
- - LCC_NODE_COMPONENT_BASE. See https://github.com/JohnCallingham/LCC_NODE_COMPONENT_BASE
+ - [ArduinoJson](https://github.com/bblanchon/ArduinoJson)
+ - [DEBOUNCE](https://github.com/JohnCallingham/DEBOUNCE)
+ - [LCC_NODE_COMPONENT_BASE](https://github.com/JohnCallingham/LCC_NODE_COMPONENT_BASE)
 
  The PlatformIO Library Dependency Finder handles downloading all dependencies.
