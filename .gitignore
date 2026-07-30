@@ -1,9 +1,5 @@
 .pio
 .vscode
-credential*.*
-*.drawio
-*.xls*
-Configurations.json
-*.txt
 .gitignore
-
+credential*.*
+configurations*.*
