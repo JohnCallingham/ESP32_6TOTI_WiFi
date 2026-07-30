@@ -8,9 +8,17 @@ It is part of a group of node types which use the same codebase. The other node 
 
 ## General functionality
 
-1. Provides TOTI (Train On Track Indication) functionality for six TOTIs.
-2. Allows the onboard LED to be configured to indicate various events.
-3. Allows for remote configuration and remote software updates.
+All of the node types which share the common codebase provide the following functionality;-
+- Responds to consumed events and sends produced events, depending on the specific features of the node.
+- When initially connected to JMRI's LCC hub the node sends the state of all events so that JMRI knows the current state of the node.
+- Responds to queries from JMRI.
+- Allows the user to configure the ESP32's built in RGB LED to indicate various states of the node.
+- Allows the user to start various testing cycles for the node.
+- Allows for remote configuration and remote firmware updates.
+
+## Specific functionality for this node type
+
+- Provides TOTI (Train On Track Indication) functionality for six TOTIs.
 
 ## Detailed functionality
 
