@@ -21,7 +21,8 @@
     // dPS(string,x) prints string and x
 #include <Arduino.h>
 #include "credentials.h"
-#include "ESP32WiFiGC_V2.h"
+// #include "ESP32WiFiGC_V2.h"
+#include "ESP32WiFiGC_V4.h"
 #include "TOTI.h"
 // #include "configurationOTA.h" // ??? required ??? esp32wifigc_v2.h includes this
 #include "configurationPreferences.h"
