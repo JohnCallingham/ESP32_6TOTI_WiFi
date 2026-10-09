@@ -1,3 +1,3 @@
 ## v1.1.2
 
-Add call to initialiseTelnet()
+Add call to initialiseTelnet().
