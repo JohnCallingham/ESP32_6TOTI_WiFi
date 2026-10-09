@@ -34,7 +34,7 @@
 #define MANU "J Callingham"  // The manufacturer of node
 #define MODEL "ESP32_6TOTI_Wifi" // The model of the board
 #define HWVERSION "0.1"   // Hardware version
-#define SWVERSION "1.1.1"   // Software version
+#define SWVERSION "1.1.2"   // Software version
 
 // To Reset the Node Number, Uncomment and edit the next line
 // Need to do this at least once.  
@@ -247,6 +247,22 @@ uint8_t protocolIdentValue[6] = {   //0xD7,0x58,0x00,0,0,0};
 
 #define OLCB_NO_BLUE_GOLD
 
+
+
+
+// Was "NodeID nodeid(NODE_ADDRESS);" which was moved here for version 0.1.19.
+// The actual value for Node ID is now set in setup() using data from Preferences or
+// uses NODE_ADDRESS if not available in Preferences.
+NodeID nodeid;
+
+// The following #include needs nodeid to be already declared.
+#include "OpenLCBMid.h"   // Essential - do not move or delete
+
+
+
+
+
+
 /**
  * userState() is called when JMRI queries the state of an event index.
  */
@@ -348,13 +364,21 @@ void initialiseTOTIs() {
   }
 }
 
-// Was "NodeID nodeid(NODE_ADDRESS);" which was moved here for version 0.1.19.
-// The actual value for Node ID is now set in setup() using data from Preferences or
-// uses NODE_ADDRESS if not available in Preferences.
-NodeID nodeid;
+// // Was "NodeID nodeid(NODE_ADDRESS);" which was moved here for version 0.1.19.
+// // The actual value for Node ID is now set in setup() using data from Preferences or
+// // uses NODE_ADDRESS if not available in Preferences.
+// NodeID nodeid;
 
-// The following #include needs nodeid to be already declared.
-#include "OpenLCBMid.h"   // Essential - do not move or delete
+// // The following #include needs nodeid to be already declared.
+// #include "OpenLCBMid.h"   // Essential - do not move or delete
+
+
+void initialiseTelnet() {
+  TelnetLCC::initialiseTelnet();
+  TelnetLCC::setNodeID(nodeid);
+  TelnetLCC::setSWVersion(SWVERSION);
+  TelnetLCC::setModel(MODEL);
+}
 
 // ==== Setup does initial configuration ======================
 void setup() {
@@ -392,6 +416,7 @@ void setup() {
   // NodeID nodeid(NODE_ADDRESS);      // Moved to above the line #include "OpenLCBMid.h"
   // Olcb_init(nodeid, RESET_TO_FACTORY_DEFAULTS);
 
+  initialiseTelnet();
   initialiseRGBLEDs();
   initialiseTOTIs();
 
