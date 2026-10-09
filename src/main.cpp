@@ -34,7 +34,7 @@
 #define MANU "J Callingham"  // The manufacturer of node
 #define MODEL "ESP32_6TOTI_Wifi" // The model of the board
 #define HWVERSION "0.1"   // Hardware version
-#define SWVERSION "1.1.2"   // Software version
+#define SWVERSION "1.1.3"   // Software version
 
 // To Reset the Node Number, Uncomment and edit the next line
 // Need to do this at least once.  
@@ -432,6 +432,9 @@ void loop() {
   for (uint8_t i=0; i<NUM_TOTI; i++) {
     toti[i]->loop();
   }
+
+  // Process any telnet actions.
+  TelnetLCC::loop();
 
   /**
    * Connect to the OpenLCB/LCC hub and reconnect if contact has been lost.
